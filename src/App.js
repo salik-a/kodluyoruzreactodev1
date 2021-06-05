@@ -3,13 +3,13 @@ import Card from "./components/Card/Card";
 import food from "./assets/food.jpg"; // Tell webpack this JS file uses this image
 
 function App() {
-  const recipeAuthor = "Kodluyoruz";
+  const recipeAuthor = "AS";
   const recipeItem = {
-    title: "Avokado Ezmeli Taco",
-    date: "12 Ocak 2021, Salı",
+    title: "Baklava",
+    date: "5 Mayıs 2021, Cumartesi",
     image: food,
     description:
-      "Bu kremsi ve baharatlı avokado sosu, günlük taco'larınızı hazırlamak için harika seçeneklerden biri. Geleneksel olarak flautas veya taquitos ile servis edilir, ancak bazı vegan enchiladalara da harika bir katkı sağlar.",
+      "Türk mutfağı denince ilk akla gelen lezzetlerden bir diğeri ise hiç şüphesiz ki baklava. Şerbetli tatlıların şahı baklava, ülkemizde olduğu gibi yurt dışında da oldukça popüler bir tarif.Öte yandan ince ince açılmış, tam kıvamında şerbetiyle taçlandırılmış, Antep fıstığı ile lezzetine lezzet katılmış baklava için en doğru adres, elbette Türkiye.",
   };
 
   const likeCount = 193;

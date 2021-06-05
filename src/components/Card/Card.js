@@ -5,13 +5,17 @@ import heartOutline from "../../assets/heart-outline.png"; // Tell webpack this 
 import heartFill from "../../assets/heart-fill.png"; // Tell webpack this JS file uses this image
 
 export default function Card(props) {
+  
+
   let liked = true;
+  
+   
   return (
     
-    <div className="card" onClick={()=>liked=false} >
+    <div className="card"  >
       <div className="card-header">
         <div className="profile">
-          <span className="letter">{props.author[0]}</span>
+          <span className="letter">{props.author}</span>
         </div>
         <div className="card-title-group">
           <h5 className="card-title">{props.title}</h5>
@@ -21,11 +25,9 @@ export default function Card(props) {
       <img className="card-image" src={props.image} alt="Logo" />
       <div className="card-text">{props.description}</div>
       <div className="card-like-bar" >
-        {liked ? (
-          <img className="card-like-icon" src={heartFill} alt="Logo" />
-        ) : (
-          <img className="card-like-icon" src={heartOutline} alt="Logo" />
-        )}
+        
+          <img className="card-like-icon" src={liked ? heartFill:heartOutline} alt="Logo" />
+      
         <div className="like-text">
           <b>{props.likeCount}</b> kişi bu tarifi beğendi.
         </div>
